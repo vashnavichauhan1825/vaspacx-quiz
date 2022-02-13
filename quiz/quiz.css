@@ -79,7 +79,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 30%;
+    height: 250px;
     flex-wrap: wrap;
     gap: 20px;
 }
