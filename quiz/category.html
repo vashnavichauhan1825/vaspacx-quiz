@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vaspacx-quiz/home</title>
+        <link rel="stylesheet" href="quiz.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div class="quiz-category">
+    <div class="text-card-cont">
+        <h2 class="text-card-head">Quiz on Space Agencies and Centers in India</h2>
+        <p>This quiz level is hard . so are you ready ? You have 10 seconds to answer each question. The faster you answer, the higher your score. When you are done,
+             try again to beat your best score!</p>
+             <button class="primay-btn outl-btn">Play quiz</button>
+    </div>
+    <div class="text-card-cont">
+        <h2 class="text-card-head">This Quiz based on Universe and solar system</h2>
+        <p>Welcome to  interesting Easy General Knowledge Questions and Answers Quiz.
+             It has Multiple Choice Questions with a single correct answer.</p>
+             <button class="primay-btn outl-btn">Play quiz</button>
+    </div>
+    <div class="text-card-cont">
+        <h2 class="text-card-head">This Quiz based on Astronomy and Facts about space !</h2>
+        <p>Welcome to another  interesting Hard General Knowledge Questions and Answers Quiz.
+            It has Multiple Choice Questions with a single correct answer.</p>
+             <button class="primay-btn outl-btn">Play quiz</button>
+    </div>
+    <div class="text-card-cont">
+        <h2 class="text-card-head">Quiz for children's under age 10 to 15 yrs old</h2>
+        <p>Perfect for kids, this quiz will get you thinking about the fascinating topics of space and astronomy. Quizzes have become a more popular tool !
+           </p>
+             <button class="primay-btn outl-btn">Play quiz</button>
+    </div>
+</div>
+<div class="quiz-btn-cont">
+    <a href="../index.html"><button class="sec-btn outl-sec-btn">Prev.</button></a>
+
+    <a href="quiz1.html"><button class="sec-btn outl-sec-btn">Next</button></a>
+  </div>
+  <img src="../img/sun.png" id="icon">
+  
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      document.body.classList.toggle("light-theme");
+      if(document.body.classList.contains("light-theme")){
+        icon.src="../img/moon.png";
+      }else{
+        icon.src = "../img/sun.png"
+      }
+    }
+  </script>
+</body>
+</html>

@@ -112,8 +112,9 @@ body{
 }
 .quiz-btn-cont .outl-sec-btn{
     cursor: pointer;
-    background-color:#191b7d;
+    background-color:var(--quiznoColor);
     opacity:0.8;
+    color:var(--btnquizColor);
     transition:all 0.2s ease-in-out;
 }
 
@@ -122,7 +123,7 @@ body{
     opacity: 1;
     color: var(--quiznoColor);
     border-bottom: 2px solid var(--quiznoColor);
-    background-color: #191b7d;
+    background-color:var(--btnquizColor);
 }
 
 .quiz-btn-cont .quiz-submit-btn{
@@ -177,4 +178,45 @@ li:hover{
     padding: 10px 30px;
     position: absolute;
     bottom: 0%;
+}
+
+
+.quiz-category{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    margin:20px;
+}
+
+.quiz-category .text-card-cont{
+    width: 352px;
+    height: 444px;
+    color:var(--font-primary);
+    font-weight: 700;
+    padding: 10px 20px 20px 20px;
+    background: linear-gradient(166deg,#191b7d 40% , var(--secbg-color) 40%);
+    box-shadow: 0px 0px 10px 2px var(--quiznoColor);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-radius: 10px;
+}
+
+.quiz-category .primay-btn{
+    margin:5px;
+}
+
+.quiz-category .outl-btn{
+    width:auto;
+    font-size:1rem;
+    font-weight:bold;
+    background-color:var(--quiznoColor);
+    color:var(--btnquizColor);
+    border:none;
+    transition:all 0.1s ease-in-out;
+}
+
+.quiz-category .outl-btn:hover{
+    background-color:var(--btnquizColor);
+    color:var(--quiznoColor);
 }
