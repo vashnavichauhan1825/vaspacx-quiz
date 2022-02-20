@@ -1,0 +1,98 @@
+@import url('https://vaspacx-components.netlify.app/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap');
+/* @import url('https://vaspacx-login.netlify.app/login.css'); */
+:root{
+    --mainBrandColor: #3a7ce3;
+    --secondaryDark: #211c1c;
+    --font-primary: #FFFFFF;
+    --lightGrey: rgb(114 110 110);
+    --review-color: #ffb000;
+    --secbg-color: #211c1ca6;
+    --logo-color:white;
+    --url: url("./img/mainbg.jpg");
+    --intro-position:11%;
+}
+
+.light-theme{
+    --mainBrandColor: #3a7ce3;
+   --secondaryDark: #eef0fd;
+   --font-primary: rgb(0 0 0);
+   --lightGrey: rgb(114 110 110);
+   --review-color: #ffb000;
+   --secbg-color: #e2e0ec52;
+   --logo-color:black;
+   --url: url("./img/mainbglight.jpg");
+   --intro-position:5%;
+}
+.bold-primary-text{
+    color:var(--mainBrandColor);
+    font-weight: 600;
+}
+body{
+    background: var(--url);
+    color:var(--font-primary);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* main quiz page */
+
+.quiz-intro{
+    width: 649px;
+    height: 517px;
+    background-color:var(--secbg-color);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border-radius: 9px;
+    padding: 2rem;
+    padding-right: 10rem;
+    /* align-items: center; */
+    position: absolute;
+    top: 9%;
+    left:var(--intro-position);
+}
+
+.vaspacx{
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    letter-spacing: 2px;
+    padding-bottom: 23px;
+    background: -webkit-linear-gradient( 
+349deg
+ ,var(--logo-color) 21%, #3a7ce3 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a{
+    text-decoration:none;
+}
+
+.quiz-intro .quiz-btn{
+    width: 167px;
+    background: linear-gradient( 
+142deg
+ , #3a7ce3 35%, white 36%);
+ cursor: pointer;
+ transition: all 0.5s ease-in-out;
+}
+
+.quiz-btn:hover{
+    justify-content: center;
+    background: linear-gradient( 
+        189deg
+         , #3a7ce3 75%, white 36%);
+         color:var(--font-primary);
+}
+
+#icon{
+    width:30px;
+    cursor:pointer;
+    position: absolute;
+    top:5%;
+    right:5%;
+}
+

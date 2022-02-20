@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaspacx-quiz/home</title>
+    <link rel="stylesheet" href="quiz.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <div class="quiz-footer">
+        <span class="vaspacx"><a href="../index.html">vaspac<i class="fa fa-xing" aria-hidden="true"></i></a></span>
+          <ul>
+            <a href="https://github.com/vashnavichauhan1825/vaspacx-quiz"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+            <a href="https://twitter.com/VashnaviChauhan"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+          </ul>
+      </div>
+      <div class="quiz-container">
+         <h2>Who invented the telescope ?</h2>
+      </div>
+      <div class="display-wrap">
+         <div class="quiz-option-cont">
+            <input type="radio" name="quiz1" id="quiz-input">
+            <label>Johannes Kepler</label>
+         </div>
+         <div class="quiz-option-cont">
+           <input type="radio" name="quiz1" id="quiz-input">
+            <label>Galileo</label>
+        </div>
+        <div class="quiz-option-cont">
+           <input type="radio" name="quiz1" id="quiz-input">
+            <label>Hypatia</label>
+        </div>
+        <div class="quiz-option-cont">
+           <input type="radio" name="quiz1" id="quiz-input">
+            <label>Hans Lippershey</label>
+        </div>
+      </div>
+      <div class="quiz-btn-cont">
+        <a href="quiz1.html"><button class="sec-btn outl-sec-btn">Prev.</button></a>
+        <button class="sec-btn outl-sec-btn quiz-submit-btn">Submit</button>
+        <a href="quiz3.html"><button class="sec-btn outl-sec-btn">Next</button></a>
+      </div>
+    <img src="../img/sun.png" id="icon">
+    <span class="quiz-no">2</span>
+ 
+    <script>
+        var icon = document.getElementById("icon");
+    
+        icon.onclick = function(){
+          document.body.classList.toggle("light-theme");
+          if(document.body.classList.contains("light-theme")){
+            icon.src="../img/moon.png";
+          }else{
+            icon.src = "../img/sun.png"
+          }
+        }
+      </script>
+</body>
+</html>
