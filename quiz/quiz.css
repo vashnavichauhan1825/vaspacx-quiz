@@ -34,7 +34,7 @@
     width:30px;
     cursor:pointer;
     position: absolute;
-    top:5%;
+    top:2%;
     right:5%;
 }
 
@@ -98,8 +98,7 @@ body{
     position: absolute;
     border-radius: 50%;
     text-align: center;
-    padding: -6px;
-    top: 22%;
+    top: 21%;
     left: 10%;
     font-size: 4rem;
     box-shadow: 4px -5px 20px 11px var(--quiznoColor);  
@@ -109,13 +108,14 @@ body{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    margin-bottom:4rem;
 }
 .quiz-btn-cont .outl-sec-btn{
     cursor: pointer;
     background-color:var(--quiznoColor);
     opacity:0.8;
     color:var(--btnquizColor);
-    transition:all 0.2s ease-in-out;
+    transition:all 0.1s ease-in-out;
 }
 
 .quiz-btn-cont .outl-sec-btn:hover{
@@ -128,7 +128,9 @@ body{
 
 .quiz-btn-cont .quiz-submit-btn{
     color: var(--quiznoColor);
-    opacity:1;
+    background-color: var(--btnquizColor);
+    border-bottom: 2px solid var(--quiznoColor);
+    opacity: 1;
 }
 
 a{
@@ -136,9 +138,9 @@ a{
 }
 
 .quiz-btn-cont .quiz-submit-btn:hover{
-    color: var(--font-primary);
-    border-bottom: 2px solid var(--font-primary);
-    background-color: #191b7d;
+    color: var(--btnquizColor);
+    border-bottom: 2px solid var(--btnquizColor);
+    background-color: var(--quiznoColor);
 }
 
 .vaspacx{
@@ -207,7 +209,7 @@ li:hover{
 }
 
 .quiz-category .outl-btn{
-    width:auto;
+    width:100%;
     font-size:1rem;
     font-weight:bold;
     background-color:var(--quiznoColor);
