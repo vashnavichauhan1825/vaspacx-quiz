@@ -58,9 +58,7 @@ body{
     font-size: 55px;
     letter-spacing: 2px;
     padding-bottom: 23px;
-    background: -webkit-linear-gradient( 
-349deg
- ,var(--logo-color) 21%, #3a7ce3 20%);
+    background: -webkit-linear-gradient( 349deg ,var(--logo-color) 20%, #3a7ce3 20%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -74,11 +72,12 @@ ul{
     gap:5px;
    
     }
+
 ul li{
     padding:2px;
 }
     
-    ul li::before{
+ul li::before{
         content:'🚀';
         margin:5px;
     }
@@ -95,7 +94,7 @@ ul li{
 
     .border-yellow{
         border:2px solid var(--review-color);
-        color:var(--review-color);
+        color:var(--);
     }
 
 a{
